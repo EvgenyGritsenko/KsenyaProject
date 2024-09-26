@@ -1,0 +1,30 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = #1058#1077#1086#1088#1080#1103
+  ClientHeight = 838
+  ClientWidth = 1045
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label3: TLabel
+    Left = 8
+    Top = 659
+    Width = 504
+    Height = 84
+    Caption = 
+      #1054#1087#1072#1089#1085#1086' '#1074#1086#1079#1074#1088#1072#1097#1072#1090#1100' '#1080#1079' '#1092#1091#1085#1082#1094#1080#1080' '#1089#1089#1099#1083#1082#1091' '#1085#1072' '#1083#1086#1082#1072#1083#1100#1085#1091#1102' '#1087#1077#1088#1077#1084#1077#1085#1085#1091#1102', '#1090#1072#1082 +
+      ' '#1082#1072#1082' '#1101#1090#1072' '#1089#1089#1099#1083#1082#1072' '#1089#1088#1072#1079#1091' '#1078#1077' '#1089#1090#1072#1085#1077#1090' '#171#1074#1080#1089#1103#1095#1077#1081#187':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowFrame
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    WordWrap = True
+  end
+end

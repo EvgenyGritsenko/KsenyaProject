@@ -1,0 +1,103 @@
+#include <vcl.h>
+#include <stdlib.h> // для rand()
+#pragma hdrstop
+#include "Unit8.h"
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+
+TForm8 *Form8;
+
+__fastcall TForm8::TForm8(TComponent* Owner)
+    : TForm(Owner), score(0)
+{
+    GenerateTask();
+}
+
+void __fastcall TForm8::ButtonExecuteClick(TObject *Sender)
+{
+    if (ValidateAnswer()) {
+        score += 10; // добавляем очки за правильный ответ
+        ShowMessage("Правильно! Ваши очки: " + IntToStr(score));
+        GenerateTask(); // генерируем новое задание
+    } else {
+        score -= 5; // штраф за неправильный ответ
+        ShowMessage("Неправильно! Ваши очки: " + IntToStr(score));
+    }
+}
+
+void TForm8::GenerateTask()
+{
+    // Генерация задания в зависимости от уровня сложности
+    int taskType = rand() % 4; // случайный выбор типа задачи
+
+    switch (taskType) {
+        case 0:
+            currentFunction = &TForm2::SquareFunction;
+            LabelTask->Caption = "Введите число для возведения в квадрат:";
+            break;
+        case 1:
+            currentFunction = &TForm2::FactorialFunction;
+            LabelTask->Caption = "Введите число для вычисления факториала:";
+            break;
+        case 2:
+            currentFunction = &TForm2::IsPrimeFunction;
+            LabelTask->Caption = "Введите число для проверки на простоту:";
+            break;
+        case 3:
+            currentFunction = &TForm2::RandomFunction;
+            LabelTask->Caption = "Введите предел для случайного числа:";
+            break;
+    }
+}
+
+bool TForm8::ValidateAnswer()
+{
+    try {
+        int input = StrToInt(EditInput->Text);
+        return (this->*currentFunction)(input); // вызов текущей функции
+    } catch (...) {
+        ShowMessage("Введите корректное число.");
+        return false;
+    }
+}
+
+// Примеры функций
+bool TForm8::SquareFunction(int number)
+{
+    int result = number * number;
+    return PromptForAnswer(result);
+}
+
+bool TForm8::FactorialFunction(int number)
+{
+    int result = 1;
+    for (int i = 2; i <= number; ++i)
+        result *= i;
+    return PromptForAnswer(result);
+}
+
+bool TForm8::IsPrimeFunction(int number)
+{
+    if (number < 2) return PromptForAnswer(false);
+    for (int i = 2; i <= sqrt(number); ++i)
+        if (number % i == 0) return PromptForAnswer(false);
+    return PromptForAnswer(true);
+}
+
+bool TForm8::RandomFunction(int number)
+{
+    int randomResult = rand() % number + 1;
+    return PromptForAnswer(randomResult);
+}
+
+bool TForm8::PromptForAnswer(int correctAnswer)
+{
+    int userAnswer = StrToInt(InputBox("Ваш ответ", "Введите ответ:", ""));
+    return userAnswer == correctAnswer;
+}
+
+bool TForm8::PromptForAnswer(bool correctAnswer)
+{
+    String userAnswer = InputBox("Ваш ответ", "Введите да или нет:", "").LowerCase();
+    return (correctAnswer && userAnswer == "да") || (!correctAnswer && userAnswer == "нет");
+}

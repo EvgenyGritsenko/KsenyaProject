@@ -1,0 +1,25 @@
+#ifndef Unit8H
+#define Unit8H
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+
+class TForm8 : public TForm
+{
+__published:
+    TButton *ButtonExecute;
+	TEdit *EditInput;
+	TLabel *LabelScore;
+	TLabel *LabelTask;
+    TLabel *LabelStatus;
+    void __fastcall ButtonExecuteClick(TObject *Sender);
+private:
+    int score;
+	bool (TForm8::*currentFunction)(int);
+public:
+    __fastcall TForm8(TComponent* Owner);
+};
+
+extern PACKAGE TForm8 *Form8;
+#endif

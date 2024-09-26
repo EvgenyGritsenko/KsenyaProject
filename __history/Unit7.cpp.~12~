@@ -1,0 +1,55 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit7.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm7 *Form7;
+
+
+Question questions[] = {
+    {"Функция main обязана возвращать int?", true},
+    {"Может ли функция возвращать void?", true},
+    {"Может ли одна функция вызывать другую?", true},
+    {"Можно ли использовать в C++ язык ассемблера?", true},
+    {"Функция всегда должна иметь параметры?", false}
+};
+
+int questionIndex = 0;
+int correctAnswers = 0;
+int wrongAnswers = 0;
+
+
+//---------------------------------------------------------------------------
+__fastcall TForm7::TForm7(TComponent* Owner)
+	: TForm(Owner)
+{
+    LabelQuestion->Caption = questions[questionIndex].text;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm7::Button1Click(TObject *Sender)
+{
+	NextQuestion();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm7::Button2Click(TObject *Sender)
+{
+	NextQuestion();
+}
+//---------------------------------------------------------------------------
+
+
+void TTestForm::NextQuestion()
+{
+    questionIndex++;
+    if (questionIndex < sizeof(questions)/sizeof(questions[0])) {
+        LabelQuestion->Caption = questions[questionIndex];
+    } else {
+        ShowMessage("Тест завершён!");
+        Close(); // Закрыть форму после завершения теста
+    }
+}

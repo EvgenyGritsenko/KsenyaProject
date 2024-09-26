@@ -1,0 +1,32 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit10H
+#define Unit10H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <vector>
+//---------------------------------------------------------------------------
+class TForm10 : public TForm
+{
+__published:	// IDE-managed Components
+	TEdit *Edit1;
+	TButton *AddButton;
+	TButton *DeleteButton;
+	TComboBox *ComboBox1;
+	TMemo *Memo1;
+	void __fastcall AddButtonClick(TObject *Sender);
+	void __fastcall DeleteButtonClick(TObject *Sender);
+	void __fastcall ComboBox1Change(TObject *Sender);
+private:	// User declarations
+	std::vector<TLabel*> LabelList;
+    void __fastcall UpdateMemoStats();
+public:		// User declarations
+	__fastcall TForm10(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm10 *Form10;
+//---------------------------------------------------------------------------
+#endif

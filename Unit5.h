@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit5H
+#define Unit5H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Skia.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
+//---------------------------------------------------------------------------
+class TForm5 : public TForm
+{
+__published:	// IDE-managed Components
+	TLabel *Label2;
+	TLabel *Label1;
+	TMemo *Memo3;
+	TMemo *Memo1;
+	TLabel *Label3;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm5(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm5 *Form5;
+//---------------------------------------------------------------------------
+#endif

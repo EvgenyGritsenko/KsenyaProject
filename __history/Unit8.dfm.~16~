@@ -1,0 +1,15 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = #1052#1048#1053#1048'-'#1048#1043#1056#1040
+  ClientHeight = 572
+  ClientWidth = 961
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnClick = ButtonExecuteClick
+  TextHeight = 15
+end

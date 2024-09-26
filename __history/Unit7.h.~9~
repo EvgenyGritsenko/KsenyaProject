@@ -1,0 +1,39 @@
+#include "Unit7.h"  // Убедитесь, что этот файл содержит структуру Question и другие необходимые объявления
+#include <vector>
+#include <string>
+
+// Пример структуры Question, если она еще не определена
+struct Question {
+    std::string questionText;
+    bool correctAnswer;
+};
+
+std::vector<Question> questions = {
+    {"Is the sky blue?", true},
+    {"Is grass red?", false},
+};
+
+int score = 0;
+int currentQuestionIndex = 0;
+
+void showNextQuestion(TLabel *label) {
+    if (currentQuestionIndex < questions.size()) {
+        // Преобразование std::string в UnicodeString для отображения вопроса
+        label->Caption = UnicodeString(questions[currentQuestionIndex].questionText.c_str());
+    }
+}
+
+void checkAnswer(bool answer, TLabel *scoreLabel, TLabel *questionLabel) {
+    if (answer == questions[currentQuestionIndex].correctAnswer) {
+        score++;
+        scoreLabel->Caption = L"Score: " + UnicodeString(score);
+    }
+
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.size()) {
+        showNextQuestion(questionLabel);
+    } else {
+        questionLabel->Caption = L"Quiz finished!";
+    }
+}
+
