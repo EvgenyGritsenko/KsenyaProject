@@ -1,12 +1,12 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Width = 600
-  Height = 792
   Align = alClient
   BiDiMode = bdLeftToRight
   BorderStyle = bsDialog
   Caption = #1058#1077#1086#1088#1080#1103
+  ClientHeight = 753
+  ClientWidth = 584
   Color = clBtnFace
   Constraints.MaxWidth = 600
   Font.Charset = DEFAULT_CHARSET
@@ -50,8 +50,8 @@ object Form2: TForm2
   object Label3: TLabel
     Left = 8
     Top = 303
-    Width = 537
-    Height = 114
+    Width = 490
+    Height = 112
     Caption = 
       '2. '#1050#1083#1072#1089#1089' std::string: '#1057#1090#1088#1086#1082#1080' '#1074' C++ '#1095#1072#1089#1090#1086' '#1080#1089#1087#1086#1083#1100#1079#1091#1102#1090#1089#1103' '#1095#1077#1088#1077#1079' '#1073#1080#1073#1083 +
       #1080#1086#1090#1077#1095#1085#1099#1081' '#1082#1083#1072#1089#1089' std::string, '#1082#1086#1090#1086#1088#1099#1081' '#1087#1088#1077#1076#1086#1089#1090#1072#1074#1083#1103#1077#1090' '#1073#1086#1083#1100#1096#1077' '#1074#1086#1079#1084#1086#1078#1085 +

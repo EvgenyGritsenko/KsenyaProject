@@ -11,10 +11,9 @@ USEFORM("Unit8.cpp", Form8);
 USEFORM("Unit7.cpp", Form7);
 USEFORM("Unit6.cpp", Form6);
 USEFORM("FiveLesson.cpp", Form9);
-USEFORM("Unit2.cpp", Form2);
+USEFORM("Unit11.cpp", Form11);
 USEFORM("Unit10.cpp", Form10);
 USEFORM("Unit1.cpp", Form1);
-USEFORM("Unit11.cpp", Form11);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -23,7 +22,6 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TForm1), &Form1);
-		Application->CreateForm(__classid(TForm2), &Form2);
 		Application->CreateForm(__classid(TForm3), &Form3);
 		Application->CreateForm(__classid(TForm4), &Form4);
 		Application->CreateForm(__classid(TForm5), &Form5);

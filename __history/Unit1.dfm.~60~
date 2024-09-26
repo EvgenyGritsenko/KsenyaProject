@@ -1,0 +1,53 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = #1048#1079#1091#1095#1072#1081' '#1088#1072#1073#1086#1090#1091' '#1089#1086' '#1089#1090#1088#1086#1082#1072#1084#1080' '#1074' C++!'
+  ClientHeight = 591
+  ClientWidth = 1095
+  Color = clCream
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Menu = MainMenu1
+  TextHeight = 15
+  object MainMenu1: TMainMenu
+    Left = 8
+    Top = 16
+    object N2: TMenuItem
+      Caption = #1058#1077#1089#1090#1080#1088#1086#1074#1072#1085#1080#1077
+      object N8: TMenuItem
+        Caption = #1055#1077#1088#1074#1099#1081' '#1090#1077#1089#1090
+        OnClick = N8Click
+      end
+      object N9: TMenuItem
+        Caption = #1042#1090#1086#1088#1086#1081' '#1090#1077#1089#1090
+        OnClick = N9Click
+      end
+    end
+    object N1: TMenuItem
+      Caption = #1058#1077#1086#1088#1080#1090#1080#1095#1077#1089#1082#1072#1103' '#1095#1072#1089#1090#1100
+      object N4: TMenuItem
+        Caption = #1050#1086#1085#1089#1087#1077#1082#1090' 1'
+        OnClick = N4Click
+      end
+      object N5: TMenuItem
+        Caption = #1050#1086#1085#1089#1087#1077#1082#1090' 2'
+        OnClick = N5Click
+      end
+      object N6: TMenuItem
+        Caption = #1050#1086#1085#1089#1087#1077#1082#1090' 3'
+        OnClick = N6Click
+      end
+      object N7: TMenuItem
+        Caption = #1050#1086#1085#1089#1087#1077#1082#1090' 4'
+        OnClick = N7Click
+      end
+      object N51: TMenuItem
+        Caption = #1050#1086#1085#1089#1087#1077#1082#1090' 5'
+        OnClick = N51Click
+      end
+    end
+  end
+end

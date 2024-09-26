@@ -5,7 +5,6 @@
 #pragma hdrstop
 
 #include "Unit1.h"
-#include "Unit2.h"
 #include "Unit3.h"
 #include "Unit4.h"
 #include "Unit5.h"
@@ -26,94 +25,19 @@ TForm1 *Form1;
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
 {
-   ShowMessage("Добро пожаловать в приложение! \nРаботу подготовила Кравченко Ангелина на тему \"Строки. Строковые данные\"");
-}
-//---------------------------------------------------------------------------
-void __fastcall TForm1::N4Click(TObject *Sender)
-{
-	TForm2 *form = new TForm2(this);
-	form->Show();
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm1::N5Click(TObject *Sender)
+void __fastcall TForm1::Button1Click(TObject *Sender)
 {
 	TForm3 *form = new TForm3(this);
 	form->Show();
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm1::N6Click(TObject *Sender)
-{
-	TForm4 *form = new TForm4(this);
-	form->Show();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::N7Click(TObject *Sender)
-{
-	TForm5 *form = new TForm5(this);
-	form->Show();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::N8Click(TObject *Sender)
+void __fastcall TForm1::Button6Click(TObject *Sender)
 {
 	TForm6 *form = new TForm6(this);
-	form->ShowModal();
-}
-//---------------------------------------------------------------------------
-
-
-void __fastcall TForm1::N9Click(TObject *Sender)
-{
-	TForm7 *form = new TForm7(this);
-	form->ShowModal();
-}
-//---------------------------------------------------------------------------
-
-
-//---------------------------------------------------------------------------
-
-
-void __fastcall TForm1::N51Click(TObject *Sender)
-{
-	TForm9 *form = new TForm9(this);
-	form->Show();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::Label1Click(TObject *Sender)
-{
-	TForm6 *form = new TForm6(this);
-	form->Show();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::Label2Click(TObject *Sender)
-{
-	TForm7 *form = new TForm7(this);
-	form->Show();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::Label3Click(TObject *Sender)
-{
-	TForm11 *form = new TForm11(this);
-	form->Show();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::N3Click(TObject *Sender)
-{
-	TForm8 *form = new TForm8(this);
-	form->Show();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::Label5Click(TObject *Sender)
-{
-	TForm10 *form = new TForm10(this);
 	form->Show();
 }
 //---------------------------------------------------------------------------
