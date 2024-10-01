@@ -179,12 +179,6 @@
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
     </PropertyGroup>
     <ItemGroup>
-        <CppCompile Include="FiveLesson.cpp">
-            <Form>Form9</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>FiveLesson.h</DependentOn>
-            <BuildOrder>10</BuildOrder>
-        </CppCompile>
         <CppCompile Include="Project1.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
@@ -198,34 +192,16 @@
             <DependentOn>Unit1.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit10.cpp">
-            <Form>Form10</Form>
+        <CppCompile Include="Unit12.cpp">
+            <Form>Form12</Form>
             <FormType>dfm</FormType>
-            <DependentOn>Unit10.h</DependentOn>
-            <BuildOrder>11</BuildOrder>
-        </CppCompile>
-        <CppCompile Include="Unit11.cpp">
-            <Form>Form11</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit11.h</DependentOn>
-            <BuildOrder>12</BuildOrder>
-        </CppCompile>
-        <CppCompile Include="Unit3.cpp">
-            <Form>Form3</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit3.h</DependentOn>
-            <BuildOrder>4</BuildOrder>
-        </CppCompile>
-        <CppCompile Include="Unit4.cpp">
-            <Form>Form4</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit4.h</DependentOn>
+            <DependentOn>Unit12.h</DependentOn>
             <BuildOrder>5</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit5.cpp">
-            <Form>Form5</Form>
+        <CppCompile Include="Unit13.cpp">
+            <Form>Form13</Form>
             <FormType>dfm</FormType>
-            <DependentOn>Unit5.h</DependentOn>
+            <DependentOn>Unit13.h</DependentOn>
             <BuildOrder>6</BuildOrder>
         </CppCompile>
         <CppCompile Include="Unit6.cpp">
@@ -234,28 +210,17 @@
             <DependentOn>Unit6.h</DependentOn>
             <BuildOrder>7</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit7.cpp">
-            <Form>Form7</Form>
+        <CppCompile Include="Unit9.cpp">
+            <Form>Form9</Form>
             <FormType>dfm</FormType>
-            <DependentOn>Unit7.h</DependentOn>
-            <BuildOrder>8</BuildOrder>
+            <DependentOn>Unit9.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit8.cpp">
-            <Form>Form8</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit8.h</DependentOn>
-            <BuildOrder>9</BuildOrder>
-        </CppCompile>
-        <FormResources Include="Unit5.dfm"/>
-        <FormResources Include="Unit4.dfm"/>
-        <FormResources Include="Unit3.dfm"/>
-        <FormResources Include="Unit8.dfm"/>
-        <FormResources Include="Unit7.dfm"/>
+        <FormResources Include="Unit9.dfm"/>
         <FormResources Include="Unit6.dfm"/>
-        <FormResources Include="FiveLesson.dfm"/>
-        <FormResources Include="Unit11.dfm"/>
-        <FormResources Include="Unit10.dfm"/>
         <FormResources Include="Unit1.dfm"/>
+        <FormResources Include="Unit12.dfm"/>
+        <FormResources Include="Unit13.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
