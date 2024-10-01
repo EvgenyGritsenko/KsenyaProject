@@ -45,5 +45,6 @@ object Form13: TForm13
     Font.Style = []
     ParentFont = False
     TabOrder = 1
+    OnClick = Button1Click
   end
 end

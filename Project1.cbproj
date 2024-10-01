@@ -204,23 +204,65 @@
             <DependentOn>Unit13.h</DependentOn>
             <BuildOrder>6</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Unit14.cpp">
+            <Form>Form14</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit14.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Unit15.cpp">
+            <Form>Form15</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit15.h</DependentOn>
+            <BuildOrder>7</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Unit16.cpp">
+            <Form>Form16</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit16.h</DependentOn>
+            <BuildOrder>8</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Unit17.cpp">
+            <Form>Form17</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit17.h</DependentOn>
+            <BuildOrder>9</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Unit18.cpp">
+            <Form>Form18</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit18.h</DependentOn>
+            <BuildOrder>10</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Unit19.cpp">
+            <Form>Form19</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit19.h</DependentOn>
+            <BuildOrder>11</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Unit20.cpp">
+            <Form>Form20</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit20.h</DependentOn>
+            <BuildOrder>12</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Unit6.cpp">
             <Form>Form6</Form>
             <FormType>dfm</FormType>
             <DependentOn>Unit6.h</DependentOn>
             <BuildOrder>7</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit9.cpp">
-            <Form>Form9</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit9.h</DependentOn>
-            <BuildOrder>4</BuildOrder>
-        </CppCompile>
-        <FormResources Include="Unit9.dfm"/>
-        <FormResources Include="Unit6.dfm"/>
-        <FormResources Include="Unit1.dfm"/>
-        <FormResources Include="Unit12.dfm"/>
         <FormResources Include="Unit13.dfm"/>
+        <FormResources Include="Unit6.dfm"/>
+        <FormResources Include="Unit12.dfm"/>
+        <FormResources Include="Unit1.dfm"/>
+        <FormResources Include="Unit14.dfm"/>
+        <FormResources Include="Unit15.dfm"/>
+        <FormResources Include="Unit16.dfm"/>
+        <FormResources Include="Unit17.dfm"/>
+        <FormResources Include="Unit18.dfm"/>
+        <FormResources Include="Unit19.dfm"/>
+        <FormResources Include="Unit20.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

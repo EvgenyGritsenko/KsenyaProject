@@ -9320,8 +9320,8 @@ object Form1: TForm1
       46FBC22AFD260B0AA6C996F98EBC4F488F33D14549B3FFD9}
     ShowHint = False
     Stretch = True
-    ExplicitLeft = 120
-    ExplicitTop = 95
+    ExplicitLeft = 96
+    ExplicitTop = 110
   end
   object Label1: TLabel
     Left = 8
@@ -9347,19 +9347,6 @@ object Form1: TForm1
     Font.Height = -27
     Font.Name = 'JetBrains Mono'
     Font.Style = [fsBold, fsItalic]
-    ParentFont = False
-  end
-  object Label3: TLabel
-    Left = 816
-    Top = 424
-    Width = 167
-    Height = 37
-    Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clMenu
-    Font.Height = -27
-    Font.Name = 'Segoe UI'
-    Font.Style = []
     ParentFont = False
   end
   object Button6: TButton
@@ -9390,7 +9377,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    OnClick = Button6Click
+    OnClick = Button7Click
   end
   object Button8: TButton
     Left = 800
@@ -9405,7 +9392,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 2
-    OnClick = Button6Click
+    OnClick = Button8Click
   end
   object Button1: TButton
     Left = 64
@@ -9420,6 +9407,7 @@ object Form1: TForm1
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
     TabOrder = 3
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 64
@@ -9434,6 +9422,7 @@ object Form1: TForm1
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
     TabOrder = 4
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 64
@@ -9448,6 +9437,7 @@ object Form1: TForm1
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
     TabOrder = 5
+    OnClick = Button3Click
   end
   object Button4: TButton
     Left = 64
@@ -9462,6 +9452,7 @@ object Form1: TForm1
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
     TabOrder = 6
+    OnClick = Button4Click
   end
   object Button5: TButton
     Left = 64
@@ -9476,6 +9467,22 @@ object Form1: TForm1
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
     TabOrder = 7
+    OnClick = Button5Click
+  end
+  object Button9: TButton
+    Left = 800
+    Top = 368
+    Width = 273
+    Height = 81
+    Caption = #1058#1077#1086#1088#1080#1103
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -40
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button9Click
   end
   object MainMenu1: TMainMenu
     Top = 8
@@ -9483,6 +9490,7 @@ object Form1: TForm1
       Caption = #1055#1086#1084#1086#1097#1100
       object N2: TMenuItem
         Caption = #1055#1086' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
+        OnClick = N2Click
       end
     end
     object N3: TMenuItem

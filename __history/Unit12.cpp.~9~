@@ -1,0 +1,63 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit12.h"
+#include "Unit6.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm12 *Form12;
+//---------------------------------------------------------------------------
+// Инициализация списка вопросов
+std::vector<Question> questions = {
+	{"Какой из циклов может отсутствовать в конструкции for?", {"Инициализация", "Условие", "Все части могут отсутствовать"}, 2},
+	{"Что делает следующий код? for (int i = 0; i < 10; i++) continue;", {"Пропускает все итерации", "Цикл не выполняется", "Цикл выполняется 10 раз, но тело не исполняется"}, 2},
+	{"Какой цикл завершится после первой итерации?", {"for (int i = 0; i < 1; i++)", "while (false)", "do { ... } while (false)"}, 0},
+	{"Какой из циклов не является стандартным в C++?", {"for", "do-while", "repeat-until"}, 2},
+	{"Что происходит, если условие в for всегда ложно?", {"Цикл выполняется бесконечно", "Цикл выполняется один раз", "Цикл не выполняется"}, 2},
+	{"Как можно реализовать цикл с предусловием на основе for?", {"for (инициализация; условие; инкремент)", "while (условие)", "do { ... } while (условие)"}, 1},
+	{"Что произойдет, если в цикле while условие никогда не станет ложным?", {"Цикл выполнится один раз", "Цикл не завершится", "Программа завершится с ошибкой"}, 1},
+	{"Какой цикл удобнее использовать для итерации по контейнеру?", {"for (auto item : container)", "while", "do-while"}, 0},
+	{"Что делает оператор break в теле вложенного цикла?", {"Прерывает только вложенный цикл", "Прерывает оба цикла", "Продолжает выполнение цикла"}, 0},
+	{"Какой цикл можно использовать для бесконечного выполнения, если явно не указано завершение?", {"while (true)", "for ( ; ; )", "Оба варианта"}, 2},
+
+ };
+
+int currentQuestionIndex = 0;  // Индекс текущего вопроса
+int score = 0;  // Счет правильных ответов
+
+void __fastcall TForm12::ShowQuestion(int index) {
+	if (index < static_cast<int>(questions.size())) {
+		Label1->Caption = questions[index].question;
+		RadioGroup1->Items->Clear();
+		for (const auto &option : questions[index].options) {
+			RadioGroup1->Items->Add(option);
+		}
+		RadioGroup1->ItemIndex = -1;
+	} else {
+		ShowMessage("Тест завершен. Ваш результат: " + IntToStr(static_cast<int>(score)) + " из " + IntToStr(static_cast<int>(questions.size())));
+		Close();
+	}
+}
+
+__fastcall TForm12::TForm12(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+
+void __fastcall TForm12::Button1Click(TObject *Sender)
+{
+	if (RadioGroup1->ItemIndex == questions[currentQuestionIndex].correctAnswerIndex) {
+		score++;
+	}
+	currentQuestionIndex++;
+	ShowQuestion(currentQuestionIndex);
+}
+
+void __fastcall TForm12::FormShow(TObject *Sender)
+{
+	ShowQuestion(0);
+}
+//---------------------------------------------------------------------------

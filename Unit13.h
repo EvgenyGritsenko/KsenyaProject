@@ -10,11 +10,6 @@
 #include <Vcl.ExtCtrls.hpp>
 #include <vector>  // Подключаем заголовок для std::vector
 //---------------------------------------------------------------------------
-struct Question {
-    String question;
-    std::vector<String> options;
-    int correctAnswerIndex;
-};
 
 //---------------------------------------------------------------------------
 
@@ -34,7 +29,6 @@ public:		// User declarations
 };
 
 // Объявляем переменные как extern
-extern std::vector<Question> questions;  // Объявляем как extern
 extern int currentQuestionIndex;
 extern int score;
 //---------------------------------------------------------------------------

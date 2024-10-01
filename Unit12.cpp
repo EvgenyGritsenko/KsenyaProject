@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Unit12.h"
+#include "Unit6.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -44,6 +45,7 @@ void __fastcall TForm12::ShowQuestion(int index) {
 __fastcall TForm12::TForm12(TComponent* Owner)
 	: TForm(Owner)
 {
+	ShowQuestion(currentQuestionIndex);
 }
 
 void __fastcall TForm12::Button1Click(TObject *Sender)

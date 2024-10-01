@@ -6,6 +6,15 @@
 
 #include "Unit1.h"
 #include "Unit6.h"
+#include "Unit12.h"
+#include "Unit13.h"
+#include "Unit14.h"
+#include "Unit15.h"
+#include "Unit16.h"
+#include "Unit17.h"
+#include "Unit18.h"
+#include "Unit19.h"
+#include "Unit20.h"
 
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -35,6 +44,60 @@ void __fastcall TForm1::Button6Click(TObject *Sender)
 void __fastcall TForm1::N3Click(TObject *Sender)
 {
     Form1->Close();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+    Form14->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+    Form15->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button3Click(TObject *Sender)
+{
+    Form16->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button4Click(TObject *Sender)
+{
+    Form17->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button5Click(TObject *Sender)
+{
+    Form18->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button9Click(TObject *Sender)
+{
+    Form19->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button7Click(TObject *Sender)
+{
+    Form12->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button8Click(TObject *Sender)
+{
+    Form13->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::N2Click(TObject *Sender)
+{
+    Form20->Show();
 }
 //---------------------------------------------------------------------------
 

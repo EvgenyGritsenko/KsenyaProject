@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit19H
+#define Unit19H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Imaging.jpeg.hpp>
+//---------------------------------------------------------------------------
+class TForm19 : public TForm
+{
+__published:	// IDE-managed Components
+	TImage *Image1;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm19(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm19 *Form19;
+//---------------------------------------------------------------------------
+#endif

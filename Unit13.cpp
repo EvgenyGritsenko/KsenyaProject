@@ -7,7 +7,10 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
+#include "Unit6.h"
 TForm13 *Form13;
+
+
 //---------------------------------------------------------------------------
 std::vector<Question> questions = {
 	{"Какое значение примет переменная i после завершения цикла for (int i = 0; i < 5; i++)?", {"4", "5", "0"}, 1},
@@ -43,6 +46,7 @@ void __fastcall TForm13::ShowQuestion(int index) {
 __fastcall TForm13::TForm13(TComponent* Owner)
 	: TForm(Owner)
 {
+    ShowQuestion(currentQuestionIndex);
 }
 
 void __fastcall TForm13::Button1Click(TObject *Sender)
